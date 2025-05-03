@@ -1,4 +1,4 @@
-import './style.css';
+import './Drink.css';
 
 export const Drink = ({ name, image }) => {
   return (
