@@ -21,3 +21,13 @@ document.querySelector('#root').innerHTML = render(
     <Footer />
   </div>
 );
+
+const navButton = document.querySelector('.nav-btn');
+const rolloutNav = document.querySelector('.rollout-nav');
+
+navButton.addEventListener('click', () => {
+  rolloutNav.classList.toggle('nav-closed');
+});
+rolloutNav.addEventListener('click', () => {
+  rolloutNav.classList.add('nav-closed');
+});
